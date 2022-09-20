@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&family=Questrial&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif,'Questrial', sans-serif;
+}
+  
+/*constantes*/
+:root  {
+    --azul : #0B3352;
+    --verdeDark : #213F36;
+    --verdeLight: #1E794C;
+    --verdeBrillante: #41B655;
+    --verdeClaro: #D6E4C6;
+    --gris: #E7E8E6;
+    /* --sombraCard: #8a8f94; */
+    --sombraCard: #8a8f947d;
+}
+
+
+
+/* Card de empresas */
+.imgCard{
+    height: 200px;
+    width: 200px;
+  /*  border: 1px solid gray;*/
+    border-radius: 150px;
+    /* box-shadow: 2px 7px 6px var(--secondary); */
+}
+
+.card{
+    width: auto;
+    box-shadow: 2px 2px 5px var(--sombraCard);
+    margin-bottom: 1rem;
+    border-radius: 2.25rem!important;
+}
+.emoji{
+    width: 40%;
+}
+
+.card h4{
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--azul);
+}
+.cardTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--verdeDark);
+    text-align: end !important;
+}
+.card p{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: end !important;
+}
+
+.iconCard{
+   width: 25px;
+   margin-right: 0px;
+   margin-left: 8px;
+}
+
+.empresasList{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+} 
+
+.botonFiltro{
+    width: 100%;
+    border-radius: 30px;
+    background-color: var(--verdeClaro);
+    border: var(--verdeClaro);
+    color: var(--verdeDark);
+    font-weight: bold;
+    height: 2rem;
+    padding-left: 15px;
+
+}
+
+.btn-buscar{
+    height: fit-content;
+    border-radius: 30px;
+    width: 100%;
+    font-size: small;
+}
+
+.center{
+    margin-left: auto; 
+    margin-right: auto;
+}
+.dp-md-none{
+    display: none;
+}
+.dp-sm-none{
+    display: block;
+}
+
+.text-end{
+    text-align: end;
+}
+.text-start{
+    text-align: start;
+}
+
+.text-Dark{
+    color: var(--verdeDark)!important;
+}
+.text-Ligth{
+    color: var(--verdeLight)!important;
+}
+.text-Brillante{
+    color: var(--verdeBrillante)!important;
+}
+/* mostrar en movil */
+.brandIcono{
+    height: 2rem;
+    display: none;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #ffffff;
+}
+
+.navbar-nav img{
+    height: 2rem;
+}
+
+.menu .link{
+    color: #ffffff;
+    padding: 8px;
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.menu a{
+    color: #ffffff!important;
+}
+.footer{
+    background-color: var(--verdeDark);
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.footer h6{
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+.footer a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: small;
+}
+
+.footer .logo{
+    width: 43%;
+    border-radius: 100px;
+}
+.footer .madeIn a, .madeIn{
+    color: #C8C8C8;
+    font-size: small;
+}
+
+
+.fondoPortada {
+    width: 100%;
+}
+
+.main{
+    height: 50rem;
+}
+.portada{
+    height: 25rem;
+    margin-top: -64px;
+    z-index: -1;
+}
+.portada h1{
+    font-weight: bold !important;
+}
+.portada p{
+    font-family: 'Questrial';
+    font-size: medium;
+}
+
+.directorio{
+   /* height: 50rem;*/
+    background-color: var(--gris);
+}
+
+.directorio h5{
+    font-family: 'Questrial';
+    color: var(--azul);
+}
+
+.carousel-caption{
+    padding-bottom: 100px;
+}
+
+
+/* //Notfound */
+.notFound img{
+    height: 24rem;
+}
+
+.notFound p{
+    font-weight: bold;
+    font-family: 'Questrial';
+    font-size: medium;
+}
+
+.noResultados img{
+    height: 24rem;
+}
+
+.empresasVerdes img{
+    height: 24rem;
+}
+
+.empresasVerdes{
+
+}
+
+.PageLoading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+.PageError {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   width: 100%;
+}
+
+@media (max-width: 768px) {
+    .botonFiltro{
+        width: 100%;
+        font-size: small;
+    }
+    .portada{
+        /* margin-top: -2px; */
+        height: 10rem;
+    }
+    .portada h1{
+        font-size: large;
+    }
+    .portada p{
+        font-size: small;
+    }
+    .carousel-caption{
+        bottom: -100px;
+    }
+    .emoji{
+        width: 40%;
+    }
+    .dp-md-none{
+        display: block;
+    }
+    .dp-sm-none{
+        display: none;
+    }
+
+    .footer .col-sm-12{
+        text-align: center!important;
+        padding-bottom: 20px;
+    }
+
+    .footer h6{
+       padding-top: 10px;
+       padding-bottom: 0px;
+       margin-bottom: 0px;
+    }
+    .text-footer a{
+        color: #f7f7f7!important;
+     }
+
+    .empresasList{
+        display: none;
+        flex-wrap: none;
+        margin-right: 0x;
+        margin-left: 0px;
+    }
+    .cardTitle {
+        text-align: center !important;
+    }
+    .card p{
+        text-align: center !important;
+    }
+
+    .notFound img{
+        height: 14rem;
+    }
+    .noResultados img{
+        height: 14rem;
+    }
+
+    .empresasVerdes img{
+        height: 14rem;
+    }
+
+    .menu .link, a {
+        color: #213F36!important;
+        padding: 0px;
+    }
+
+    .menu img{
+        display: none;
+    }
+   
+    a:hover, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+        color: #213F36;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .menu a{
+        color: #213F36!important;
+    }
+
+    .brandIcono{
+        display: flex;
+    }
+    .navbar-collapse{
+        height: 175px;
+    }
+}
